@@ -164,7 +164,8 @@ main{padding-top:76px}
   display:flex;
   gap:16px;
   justify-content:center;
-  margin-top:32px
+  margin-top:32px;
+  z-index:10
 }
 .social-center a{
   display:flex;
@@ -176,12 +177,17 @@ main{padding-top:76px}
   border:1px solid rgba(245,158,11,.35);
   border-radius:12px;
   color:#f5c97a;
-  transition:all .3s ease
+  transition:all .3s ease;
+  pointer-events:auto;
+  cursor:pointer
 }
 .social-center a:hover{
   color:#fff;
   border-color:#f5c97a;
   background:rgba(245,158,11,.1)
+}
+.social-center i{
+  pointer-events:none
 }
 
 .site-footer{
