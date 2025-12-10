@@ -160,10 +160,13 @@ main{padding-top:76px}
   filter:blur(12px)
 }
 
-.social{position:absolute;top:50%;transform:translateY(-50%)}
-.social.left{right:100%;margin-right:24px}
-.social.right{left:100%;margin-left:24px}
-.social a{
+.social-center{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  margin-top:32px
+}
+.social-center a{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -172,9 +175,14 @@ main{padding-top:76px}
   background:#0f0d0a;
   border:1px solid rgba(245,158,11,.35);
   border-radius:12px;
-  color:#f5c97a
+  color:#f5c97a;
+  transition:all .3s ease
 }
-.social a:hover{color:#fff;border-color:#f5c97a}
+.social-center a:hover{
+  color:#fff;
+  border-color:#f5c97a;
+  background:rgba(245,158,11,.1)
+}
 
 .site-footer{
   border-top:1px solid rgba(245,158,11,.25);
